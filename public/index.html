@@ -2,12 +2,21 @@
 <html>
   <head>
     <title>Simple Chat Engine</title>
-    <link href="simple-chat.css" type="text/css" rel="stylesheet">
+    <link href="simple-server.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <h1>Simple Chat Engine</h1>
+    <ul id="message-log">
+    </ul>
+    <div id="chat">
+      <input type="text" id="chat-text"></input>
+      <button id="chat-send">Send</button>
+    </div>
+    <select id="color">
+      <option value="red">Red</option>
+    </select>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="simple-chat.js"></script>
+    <script src="simple-server.js"></script>
   </body>
 </html>
